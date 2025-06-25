@@ -1,0 +1,56 @@
+<!-- d. Write a HTML program, in such a way that, rather than placing large images on a page,the preferred technique is to use thumbnails by setting the height and width parameters to something like to 100*100 pixels. Each thumbnail image is also a link to a full sized
+version of the image. Create an image gallery using this technique -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thumbnail Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .gallery a img {
+            border: 2px solid #ccc;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        .gallery a img:hover {
+            border-color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Thumbnail Image Gallery</h1>
+    <p>Click on any image to view it in full size.</p>
+
+    <div class="gallery">
+        <!-- Image 1 -->
+        <a href="images/thumb1.jpg" target="_blank">
+            <img src="images/thumb1.jpg" alt="Image 1">
+        </a>
+
+        <!-- Image 2 -->
+        <a href="images/thumb2.jpg" target="_blank">
+            <img src="images/thumb2.jpg" alt="Image 2">
+        </a>
+
+        <!-- Image 3 -->
+        <a href="images/thumb3.jpg" target="_blank">
+            <img src="images/thumb3.jpg" alt="Image 3">
+        </a>
+
+        <!-- Image 4 -->
+        <a href="images/thumb4.jpg" target="_blank">
+            <img src="images/thumb4.jpg" alt="Image 4">
+        </a>
+    </div>
+
+</body>
+</html>
