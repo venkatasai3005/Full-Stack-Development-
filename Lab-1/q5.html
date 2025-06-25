@@ -1,0 +1,69 @@
+<!-- a. Write a HTML program, to explain the working of tables. (use tags: <table>, <tr>, <th>,<td> and attributes: border, rowspan, colspan) -->
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>HTML Table Example</title>
+        <style>
+            table {
+                width: 60%;
+                margin: 20px auto;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 10px;
+                text-align: center;
+                border: 1px solid #ddd;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h1>HTML Table Example</h1>
+    
+        <table border="1">
+            <caption><strong>Student Grades</strong></caption>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Math</th>
+                    <th>Science</th>
+                    <th>English</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>85</td>
+                    <td>90</td>
+                    <td>88</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>92</td>
+                    <td>85</td>
+                    <td>91</td>
+                </tr>
+                <tr>
+                    <td>Michael Lee</td>
+                    <td>78</td>
+                    <td>84</td>
+                    <td>80</td>
+                </tr>
+                <!-- Example with Rowspan and Colspan -->
+                <tr>
+                    <td rowspan="2">Total Marks</td>
+                    <td colspan="3">John Doe</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Jane Smith</td>
+                </tr>
+            </tbody>
+        </table>
+    
+    </body>
+    </html>
+    
