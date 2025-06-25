@@ -1,0 +1,102 @@
+<!--  Write a HTML program, to explain the working of tables by preparing a timetable. (Note: Use <caption> tag to set the caption to the table & also use cell spacing, cell padding, border, rowspan, colspan etc.).
+    -->
+
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Weekly Timetable</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td {
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Weekly Timetable</h1>
+
+    <!-- Timetable Table -->
+    <table cellspacing="10" cellpadding="10" border="1">
+        <caption><strong>Weekly Schedule</strong></caption>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:00 AM - 9:00 AM</td>
+                <td>Math</td>
+                <td>Physics</td>
+                <td>Chemistry</td>
+                <td>English</td>
+                <td>Biology</td>
+            </tr>
+            <tr>
+                <td>9:00 AM - 10:00 AM</td>
+                <td>History</td>
+                <td>Math</td>
+                <td>Physics</td>
+                <td>Math</td>
+                <td>Chemistry</td>
+            </tr>
+            <tr>
+                <td>10:00 AM - 11:00 AM</td>
+                <td>Biology</td>
+                <td>Chemistry</td>
+                <td>English</td>
+                <td>History</td>
+                <td>Physics</td>
+            </tr>
+            <tr>
+                <td>11:00 AM - 12:00 PM</td>
+                <td rowspan="2" colspan="2">Lunch Break</td>
+                <td>Free Period</td>
+                <td>Free Period</td>
+                <td>Free Period</td>
+            </tr>
+            <tr>
+                <td>12:00 PM - 1:00 PM</td>
+                <td>Physical Education</td>
+                <td>Art</td>
+                <td>Geography</td>
+            </tr>
+            <tr>
+                <td>1:00 PM - 2:00 PM</td>
+                <td>Computer Science</td>
+                <td>Biology</td>
+                <td>Math</td>
+                <td>Physics</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td>2:00 PM - 3:00 PM</td>
+                <td>Music</td>
+                <td>Physical Education</td>
+                <td>Art</td>
+                <td>Geography</td>
+                <td>History</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
